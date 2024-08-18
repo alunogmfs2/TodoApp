@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
     <title>TodoApp</title>
 </head>
 <body>
-    <header></header>
+    <section id="site">
+        <header>
+            <h1>TodoApp</h1>
+            <nav>
+                <ul>
+                    <li><a href="." id="home" class="link">Home</a></li>
+                    <li><a href="about/" id="about" class="link">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="novoTodo">
+                <h2>Criar um novo Todo</h2>
+                <input type="text" name="todos" id="todocaixa">
+                <button type="submit" onclick="criarLi()">Criar Todo</button>
+            </section>
+            <section id="todos">
+                <h2>Todos</h2>
+                <ul id="lista">
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>Criado por Gabriel Massaro Fraga da Silva <a href="https://github.com/alunogmfs2/TodoApp" target="_blank">Repositorio no Github</a></p>
+        </footer>
+    </section>
+    <script src="script/script.js"></script>
 </body>
 </html>
