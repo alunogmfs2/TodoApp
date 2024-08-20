@@ -5,7 +5,15 @@ function pegarTodo() {
 
 function criarLi() {
     let li = document.createElement("li")
-    li.textContent = pegarTodo()
+    let input = document.createElement("input")
+    let label = document.createElement("label")
+    label.textContent = pegarTodo()
+    label.htmlFor = pegarTodo()
+    input.type = "checkbox"
+    input.name = pegarTodo()
+    input.id = pegarTodo()
+    li.appendChild(input)
+    li.appendChild(label)
     document.querySelector("#lista").appendChild(li)
     document.querySelector("#todocaixa").value = ""
 }
